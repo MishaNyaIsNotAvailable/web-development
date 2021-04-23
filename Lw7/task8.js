@@ -14,7 +14,6 @@ function calc(x) {
     for (let i = 0; i < x.length; i++) {
         if (operations.indexOf(x[i]) != -1) {
             myOperations.push(x[i])
-            continue
         }
         thisNumber = parseInt(x[i])
         if (thisNumber <= 9 && thisNumber >= 0) {
