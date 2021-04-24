@@ -3,7 +3,7 @@ let isPrime
 isPrimeNumber(3)
 isPrimeNumber(4)
 isPrimeNumber([3, 4, 5])
-isPrimeNumber('ya')
+isPrimeNumber('Privet')
 
 function isPrimeNumber(x) {
     isPrime = true
