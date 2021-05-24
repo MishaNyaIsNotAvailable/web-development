@@ -304,6 +304,7 @@
 }
 .films-area__name
 {
+    align-self: center;
     font-size: 36px;
     line-height: 42px;
     color: #333333;
