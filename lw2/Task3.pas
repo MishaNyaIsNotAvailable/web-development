@@ -1,16 +1,19 @@
-PROGRAM PrintHello(INPUT, OUTPUT);
-USES DOS;
+PROGRAM Hello(INPUT, OUTPUT);
+USES
+  DOS;
 VAR
-  QueryStr: STRING;
-  PosName: INTEGER;
-BEGIN {Response}
+  Query, Name: STRING;
+  KeyPos: INTEGER;
+BEGIN {Hello}
   WRITELN('Content-Type: text/plain');
   WRITELN;
-  QueryStr := GETENV('QUERY_STRING');
-  PosName := POS('name=', QueryStr);
-  IF (PosName <> 0) AND (LENGTH(QueryStr) > 5)
+  Query := GetEnv('QUERY_STRING');
+  Name := 'Anonymous!';
+  WRITE('hello dear, ');
+  KeyPos := Pos('name', Query);
+  IF KeyPos <> 0
   THEN
-    WRITELN('Hello dear, ', COPY(QueryStr, 6, LENGTH(QueryStr)), '!')
+    WRITELN(Copy(Query, KeyPos + 5, Length(Query)))
   ELSE
-    WRITELN('Hello Anonymous!')
-END. {Response}
+    WRITELN(Name)
+END. {Hello}
