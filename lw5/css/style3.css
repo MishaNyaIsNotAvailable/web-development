@@ -393,7 +393,7 @@
     cursor: pointer;
     margin-left: 1px;
     width: 498px;
-    height: 44px;
+    height: 34px;
     border-radius: 3px;
     background-color: #ffffff;
     border: 2px solid #c9c9c9; 
@@ -401,7 +401,7 @@
     font-size: 18px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
-    padding: 12px 20px;
+    padding: 12px 15px;
     margin: 8px 0;
 }
 .input-field:hover
@@ -537,6 +537,7 @@ input[type=radio]:checked + .type-radio__label::after
 }
 .footer
 {
+    margin-top: 90px;
     margin-left: -8px;
     width: 1920px;
     height: 70px;
