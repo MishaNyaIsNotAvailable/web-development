@@ -1,0 +1,101 @@
+.photo
+{
+    border-radius: 5px; 
+}
+.clear
+{
+    clear: both;
+}
+.quote
+{
+    font-size: 28px;
+    line-height: 42px;
+    color: #848484;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Georgia";    
+}
+.author
+{
+    font-size: 16px;
+    line-height: 42px;
+    color: #333333;
+    font-weight: 600;
+    font-family: "Open Sans";    
+}
+.title
+{
+    font-size: 24px;
+    line-height: 32px;
+    color: #15a98c;
+    font-weight: 600;
+    font-family: "Open Sans";    
+}
+.content
+{
+    font-size: 19px;
+    line-height: 36px;
+    color: #555555;
+    font-family: "Georgia";    
+}
+.owner
+{
+    font-size: 48px;
+    line-height: 42px;
+    color: #333333;
+    font-weight: 700;
+    font-family: "Open Sans";    
+}
+.rectangle
+{
+    width: 60px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #45c3aa;    
+}
+.articlename
+{
+    font-size: 36px;
+    line-height: 42px;
+    color: #333333;
+    font-weight: 400;
+    font-family: "Open Sans";    
+}
+.article
+{
+    font-size: 19px;
+    line-height: 32px;
+    color: #555555;
+    font-family: "Georgia";    
+}
+.feedback
+{
+    width: 180px;
+    font-size: 19px;
+    line-height: 20px;
+    color: #15a98b;
+    font-family: "Georgia";    
+}
+.feedback__text
+{
+    float: left;
+    margin: 0 10px 0 0;
+    border-bottom: #15a98b solid 1px;   
+}
+.feedback__arrow
+{
+    color: #15a98b;
+    font-family: "Georgia";  
+}
+.feedback:hover
+{
+    font-size: 19px;
+    line-height: 20px;
+    color: #098d72;
+    font-family: "Georgia";    
+}
+.feedback__arrow:hover
+{
+    color: #098d72;
+    font-family: "Georgia";    
+}
