@@ -41,8 +41,11 @@ function primeCheck(number) {
             isPrime = false;
             break;
         }
-
+        OutputValue(number);
     }
+}
+
+function OutputValue(number) {
     if (typeof number == 'number') {
 
         if (isPrime) {
@@ -54,5 +57,4 @@ function primeCheck(number) {
     } else {
         console.log(number + ' error data');
     }
-
 }
