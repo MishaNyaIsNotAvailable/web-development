@@ -14,7 +14,7 @@ CREATE TABLE gruppa
 (
     id                INT AUTO_INCREMENT NOT NULL,
     `group`           VARCHAR(255)       NOT NULL,
-    faculty_id        INT                NOT NULL,
+    faculty_id        INT UNSIGNED       NOT NULL,
     PRIMARY KEY (id)
 ) DEFAULT CHARACTER SET utf8mb4
   COLLATE `utf8mb4_unicode_ci`
@@ -25,8 +25,8 @@ CREATE TABLE student
     id                INT AUTO_INCREMENT NOT NULL,
     first_name        VARCHAR(255)       NOT NULL,
     last_name         VARCHAR(255)       NOT NULL,
-    age               INT                NOT NULL,
-    group_id          INT                NOT NULL,
+    age               INT UNSIGNED       NOT NULL,
+    group_id          INT UNSIGNED       NOT NULL,
     PRIMARY KEY (id)
 ) DEFAULT CHARACTER SET utf8mb4
   COLLATE `utf8mb4_unicode_ci`
