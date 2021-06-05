@@ -1,6 +1,7 @@
-window.onload = () => {
-    const canvas = document.getElementById('firstMan');
+function DrawFirst() {
+    const canvas = document.getElementById('FirstMan');
     const context = canvas.getContext('2d');
+
     //legs
     context.beginPath();
     context.moveTo(286, 272);
@@ -237,9 +238,12 @@ window.onload = () => {
     context.strokeStyle = "#ce253e";
 
     context.stroke();
+}
 
-    //SECOND MAN 
-
+function DrawSecond() {
+    const canvas = document.getElementById('SecondMan');
+    const context = canvas.getContext('2d');
+    
     //legs
     context.beginPath();
     context.moveTo(686, 272);
@@ -516,4 +520,9 @@ window.onload = () => {
     context.lineWidth = 3;
     context.strokeStyle = "#847a6e";
     context.stroke();
+}
+
+window.onload = () => {
+    DrawFirst();
+    DrawSecond();
 }
