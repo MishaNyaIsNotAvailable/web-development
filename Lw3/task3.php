@@ -26,11 +26,11 @@ for ($i = 0; $i < strlen($checkString); $i++)
     {
         $digitCount++;
     }
-    if(ctype_lower($checkString[$i]))
+    if(ctype_upper($checkString[$i]))
     {
         $highRegisterCount++;
     }
-    if(ctype_upper($checkString[$i]))
+    if(ctype_lower($checkString[$i]))
     {
         $lowRegisterCount++;
     }
