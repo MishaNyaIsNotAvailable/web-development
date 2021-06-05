@@ -6,18 +6,17 @@ if (!isset($_GET['identifier']))
     die("set identifier");
 }
 
-$checkString = $_GET['identifier'];
+$identifierString = $_GET['identifier'];
 
-for ($i = 0; $i < strlen($checkString); $i++)
+$len = strlen($identifierString);
+
+for ($i = 0; $i < $len; $i++)
 {
-    if($i == 0)
+    if($i == 0 AND ctype_digit($identifierString[$i]))
     {
-        if(ctype_digit($checkString[$i]))
-        {
-            die("no, first symbol must be letter");
-        }
+        die("no, first symbol must be letter");
     }
-    if(!ctype_alnum($checkString[$i]))
+    if(!ctype_alnum($identifierString[$i]))
     {
         die("no, only letter and digit");
     }
