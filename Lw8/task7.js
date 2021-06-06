@@ -23,7 +23,7 @@ function isPrimeNumber(value) {
         primeCheck(value);
     }
     else {
-        console.log(value + ' error data');
+        console.log(value + ' not a number');
     }
 
 }
@@ -41,20 +41,11 @@ function primeCheck(number) {
             isPrime = false;
             break;
         }
-        OutputValue(number);
-    }
-}
-
-function OutputValue(number) {
-    if (typeof number == 'number') {
-
+        
         if (isPrime) {
             console.log(number + ' is prime number');
         } else {
             console.log(number + ' is not prime number');
         }
-
-    } else {
-        console.log(number + ' error data');
     }
 }
