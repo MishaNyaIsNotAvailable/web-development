@@ -17,12 +17,12 @@ function calc(number) {
     let firstNumber = null;
     let secondNumber = null;
     let thisNumber = null;
-    let myOperations = [];
+    let calculation = [];
 
     for (let i = 0; i < number.length; i++) {
 
         if (operations.includes(number[i])) {
-            myOperations.push(number[i]);
+            calculation.push(number[i]);
             continue;
         }
 
@@ -33,12 +33,12 @@ function calc(number) {
                 firstNumber = thisNumber;
             } else {
                 secondNumber = thisNumber;
-                firstNumber = doCalc(myOperations.pop(), firstNumber, secondNumber);
+                firstNumber = doCalc(calculation.pop(), firstNumber, secondNumber);
             }
         }
     }
 
-    if (myOperations.length || !secondNumber || !firstNumber) {
+    if (calculation.length || !secondNumber || !firstNumber) {
         console.log('Wrong example');
     } else {
         console.log(firstNumber);
